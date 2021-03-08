@@ -10,3 +10,9 @@ export interface IRawData extends IValueItemForCores {
   year: number
   month: number
 }
+
+export interface IQuarterItem extends IValueItemForCores {
+  year: number
+  quarter: number
+  changeSincePrevQuarter: number
+}

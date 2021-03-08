@@ -1,7 +1,7 @@
 import { IValueItem } from "../model";
 import { CalculatorFunc } from "./calculator";
 
-export const movingAverage: CalculatorFunc = <T extends IValueItem>(items: Array<T>, avgItemsCount: number) => {
+export const movingAverage = <T extends IValueItem>(items: Array<T>, avgItemsCount: number) => {
   const result: Array<T> = [];
   const buffer: Array<number> = [];
 
