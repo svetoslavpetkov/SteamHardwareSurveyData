@@ -1,9 +1,12 @@
 export interface IValueItem {
-  cores: number
   value: number
 }
 
-export interface IRawData extends IValueItem {
+export interface IValueItemForCores extends IValueItem {
+  cores: number
+}
+
+export interface IRawData extends IValueItemForCores {
   year: number
   month: number
 }

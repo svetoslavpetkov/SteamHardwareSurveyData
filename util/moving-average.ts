@@ -13,10 +13,10 @@ export const movingAverage: CalculatorFunc = <T extends IValueItem>(items: Array
     buffer.push(element.value)
 
     const avg = buffer.reduce((sum, val) => sum + val, 0) / buffer.length
-
+    const roundAvg = parseFloat(avg.toFixed(4))
     result.push({
       ...element,
-      value: avg
+      value: roundAvg
     })
   }
 
